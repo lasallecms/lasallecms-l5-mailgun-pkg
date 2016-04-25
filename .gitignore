@@ -1,14 +1,7 @@
-vendor/
-node_modules/
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-bootstrap/cache/
-storage/
-.env.*.php
-.env.php
+.idea
 .env
-.env.example
+build
+composer.lock
+GPL_HEADER.txt
+/vendor
+

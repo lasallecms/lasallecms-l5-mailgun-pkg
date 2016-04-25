@@ -1,0 +1,29 @@
+{
+    "name": "lasallecms/lasallecmsmailgun",
+    "description": "Mailgun inbound processing for LaSalleCMS.",
+    "homepage": "http://lasallecms.com",
+    "keywords": ["laravel", "laravel5", "inbound email", "Mailgun", "LaSalleCMS", "South LaSalle", "Bob Bloom"],
+    "license":"GPL-3.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bob Bloom",
+            "email": "info@southlasalle.com",
+            "role": "Developer",
+            "homepage": "http://southlasalle.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lasallecms\\lasallecmsmailgun\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
+
+
+
+
