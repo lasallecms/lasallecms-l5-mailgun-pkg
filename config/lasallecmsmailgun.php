@@ -33,14 +33,39 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Title
+    | Inbound emails from these senders only
     |--------------------------------------------------------------------------
     |
-    | 
+    | Optionally allow inbound emails from these senders only.
     |
-    | 
+    | For Mailgun, it is the email specified in the "senders" post var.
     |
     */
-    'key' => 'value',
+    'inbound_emails_from_allowed_senders_only' => true,
+
+    'inbound_emails_from_allowed_senders_only_list_of_senders' => [
+        'info@southlasalle.com',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Map inbound Mailgun route with "users" email address
+    |--------------------------------------------------------------------------
+    |
+    | An email is sent. The MX record results in the email being sent to Mailgun.
+    | Mailgun looks at the inbound routes that we set up, and then sends it to
+    | our web application.
+    |
+    | What I am assuming here is that there is one Mailgun route (that's what Mailgun calls 'em, "routes")
+    | for one email in the LaSalle Software "users" table (which is the db table Laravel -- and LaSalle Software.
+    | uses -- for auth).
+    |
+    | So, one recipient for each incoming Mailgun route maps to one record in the "users" table (by email address).
+    |
+    |
+    */
+    'inbound_map_mailgun_routes_with_user_email_address' => [
+        'custom@emailtx.retroradioes.com'   => 'info@southlasalle.com',
+    ],
 
 ];

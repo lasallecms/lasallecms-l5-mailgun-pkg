@@ -1,4 +1,4 @@
-# Short Message Service 
+# Inbound email processing with Mailgun.com 
 
 [![Total Downloads](https://img.shields.io/packagist/dt/lasallecms/lasallecmsmailgun.svg?style=flat-square)](https://packagist.org/packages/lasallecms/lasallecmsmailgun)
 [![Latest Stable Version](https://poser.pugx.org/lasallecms/lasallecmsmailgun/v/stable.svg)](https://packagist.org/packages/lasallecms/lasallecmsmailgun)
@@ -8,7 +8,7 @@
 [![Laravel](https://img.shields.io/badge/Laravel-v5.1-brightgreen.svg?style=flat-square)](http://laravel.com)
 
 
-SMS package made specifically for my LaSalle Content Management System. 
+Inbound email processing with Mailgun.com  package made specifically for my LaSalle Content Management System. 
 
 ## Security
 
